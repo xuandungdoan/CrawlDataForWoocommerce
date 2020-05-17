@@ -23,7 +23,7 @@ namespace WebAutomation
         private IWebDriver browser;
 
         //Constructor
-        public Crawler() 
+        public Crawler()
         { }
 
         /// <summary>
@@ -84,7 +84,7 @@ namespace WebAutomation
             {
                 product.SKU = SKU.Replace("Mã sản phẩm: ", "");
             }
-            
+
 
             string Name = browser.FindElement(By.CssSelector("h1.mainbox-title")).GetAttribute("innerHTML");
             product.Name = Name;
@@ -92,13 +92,13 @@ namespace WebAutomation
             double finalPriceInVnd = Double.Parse(browser.FindElement(By.CssSelector(".price-num")).GetAttribute("innerHTML")) * 1.2 + 50000;
             product.SalePrice = finalPriceInVnd;
 
-           // Có 6 PriceRange: > 2.000.000, 1.000.000 - 2.000.000, 500.000 - 1.000.000, 350.000 - 500.000, 150.000 - 350.000, 95.000 - 150.000
-                string PriceRange = "";
+            // Có 6 PriceRange: > 2.000.000, 1.000.000 - 2.000.000, 500.000 - 1.000.000, 350.000 - 500.000, 150.000 - 350.000, 95.000 - 150.000
+            string PriceRange = "";
             if (finalPriceInVnd > 2000000)
             {
                 PriceRange = ">2000000";
             }
-            if (finalPriceInVnd >= 1000000  && finalPriceInVnd <= 2000000)
+            if (finalPriceInVnd >= 1000000 && finalPriceInVnd <= 2000000)
             {
                 PriceRange = "1.000.000 - 2.000.000";
             }
@@ -134,17 +134,18 @@ namespace WebAutomation
             }
             product.Images = String.Join(", ", images);
 
-            //string Description = browser.FindElement(By.CssSelector(".tab-product .tab")).GetAttribute("outerHTML");
-            //product.Description = Description.Trim().Replace(" ", "~");
+            string Description = browser.FindElement(By.CssSelector("#myTabproductContent div")).GetAttribute("innerHTML");
+            product.Description = Descriptio.Trim();
+
 
             string brand = browser.FindElement(By.CssSelector("a.product_company")).GetAttribute("innerHTML");
             product.Attribute2Value = brand.Trim().Replace(" ", "~");
 
-            
+
             product.Categories = "Brand>" + brand.Trim().Replace(" ", "~");
 
-            // string shortDes = browser.FindElement(By.CssSelector(".cm-disable-empty-files.cm-processed-form ul.product-short_description")).GetAttribute("outerHTML");
-            // product.ShortDescription = shortDes.Replace("DOSI", "VENUS").Trim().Replace(" ", "~");
+            string shortDes = browser.FindElement(By.CssSelector(".cm-disable-empty-files.cm-processed-form ul.product-short_description li")).GetAttribute("innerHTML");
+            product.ShortDescription = shortDes.Replace("DOSI", "VENUS").Trim();
 
             //----------------------------------------------
 
