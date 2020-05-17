@@ -32,12 +32,12 @@ namespace WebAutomation
                 ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
             Console.WriteLine("RunTime " + elapsedTime);
             //Run Dosin crawler
-            //Crawler crawler = new Crawler();
-            //List<Models.Product> listProduct = crawler.Run(productLinks);
+            Crawler crawler = new Crawler();
+            List<Models.Product> listProduct = crawler.Run(productLinks);
 
             //Generate WooCommerce Product Import template
-            //WooCommerceGenerator generator = new WooCommerceGenerator();
-            // generator.GenerateProductImportTemplate(listProduct, "D:\\woo.txt");
+           WooCommerceGenerator generator = new WooCommerceGenerator();
+            generator.GenerateProductImportTemplate(listProduct, "D:\\woo.txt");
         } 
     }
 }

@@ -5263,11 +5263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\JomashopWooCommerceCrawler\\WebAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\DosiWooCommerceCrawler\\WebAutomation.csproj",
       "projectName": "WebAutomation",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\JomashopWooCommerceCrawler\\WebAutomation.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\DosiWooCommerceCrawler\\WebAutomation.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\JomashopWooCommerceCrawler\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\DosiWooCommerceCrawler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

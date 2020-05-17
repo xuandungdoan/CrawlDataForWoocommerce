@@ -16,7 +16,7 @@ namespace WebAutomation
         {
             //Create new browser instance using IWebDriver
             IWebDriver browser = new ChromeDriver();
-            
+
             //Redirect to site by URL
             List<string> linkproducts = new List<string>();
             linkproducts.Add("https://dosi-in.com/top/");
@@ -66,6 +66,7 @@ namespace WebAutomation
             linkproducts.Add("https://dosi-in.com/acc/page-6/");
             linkproducts.Add("https://dosi-in.com/acc/page-7/");
 
+
             List<string> linkProduct = new List<string>();
             foreach (var link in linkproducts)
             {
@@ -79,7 +80,7 @@ namespace WebAutomation
             foreach (var link in linkProduct)
             {
                 count1 = count1 + 1;
-                Console.WriteLine("link san pham: "+ link);
+                Console.WriteLine("link san pham: " + link);
             }
             Console.WriteLine("so luong san pham: " + count1);
             browser.Close();

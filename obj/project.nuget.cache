@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b//mnqGI7GFBqfH1+TPwKe2NUIa2qyxeCTTuyp+3WKEJpskm4B4sJBZC3bHi4RsJHCiursoXzrouDEWi9bvgzA==",
+  "dgSpecHash": "vRZNKKRlcPIhphhgwqhQ99iid8SB/amk0mFffOBV7zBlaKd/kLl+5/EKqbgKpLSrnvD0qxp/KGysyI8C0JEDyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\JomashopWooCommerceCrawler\\WebAutomation.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\TKHT-E CORMMERCE\\Lab 3 - Web Crawler\\DosiWooCommerceCrawler\\WebAutomation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

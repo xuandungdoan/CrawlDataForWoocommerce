@@ -91,6 +91,11 @@ namespace WebAutomation.Models
         public string Attribute9Visible { get; set; }
         public string Attribute9Global { get; set; }
         public string Attribute9Default { get; set; }
+        public string Attribute10Name { get; set; }
+        public string Attribute10Value { get; set; }
+        public string Attribute10Visible { get; set; }
+        public string Attribute10Global { get; set; }
+        public string Attribute10Default { get; set; }
 
 
         //Constructor
@@ -135,51 +140,56 @@ namespace WebAutomation.Models
             this.ExternalURL = "";
             this.ButtonText = "";
             this.Position = "0";
-            this.Attribute1Name = "Brand";
+            this.Attribute1Name = "Size";
             this.Attribute1Value = "";
             this.Attribute1Visible = "0";
             this.Attribute1Global = "1";
             this.Attribute1Default = "";
-            this.Attribute2Name = "Gender";
+            this.Attribute2Name = "Brand ";
             this.Attribute2Value = "";
             this.Attribute2Visible = "0";
             this.Attribute2Global = "1";
             this.Attribute2Default = "";
-            this.Attribute3Name = "Case Size";
+            this.Attribute3Name = "PriceRange";
             this.Attribute3Value = "";
             this.Attribute3Visible = "0";
             this.Attribute3Global = "1";
             this.Attribute3Default = "";
-            this.Attribute4Name = "Case Shape";
+            this.Attribute4Name = "Gender";
             this.Attribute4Value = "";
             this.Attribute4Visible = "0";
             this.Attribute4Global = "1";
             this.Attribute4Default = "";
-            this.Attribute5Name = "Style";
+            this.Attribute5Name = "ÁO";
             this.Attribute5Value = "";
             this.Attribute5Visible = "0";
             this.Attribute5Global = "1";
             this.Attribute5Default = "";
-            this.Attribute6Name = "Movement";
+            this.Attribute6Name = "ÁO KHOÁC";
             this.Attribute6Value = "";
             this.Attribute6Visible = "0";
             this.Attribute6Global = "1";
             this.Attribute6Default = "";
-            this.Attribute7Name = "PriceRange";
+            this.Attribute7Name = "QUẦN";
             this.Attribute7Value = "";
             this.Attribute7Visible = "0";
             this.Attribute7Global = "1";
             this.Attribute7Default = "";
-            this.Attribute8Name = "Band Type";
+            this.Attribute8Name = "TÚI";
             this.Attribute8Value = "";
             this.Attribute8Visible = "0";
             this.Attribute8Global = "1";
             this.Attribute8Default = "";
-            this.Attribute9Name = "Collection";
+            this.Attribute9Name = "GIÀY";
             this.Attribute9Value = "";
             this.Attribute9Visible = "0";
             this.Attribute9Global = "1";
             this.Attribute9Default = "";
+            this.Attribute10Name = "PHỤ KIỆN";
+            this.Attribute10Value = "";
+            this.Attribute10Visible = "0";
+            this.Attribute10Global = "1";
+            this.Attribute10Default = "";
         }
     }
 }
@@ -277,3 +287,7 @@ Attribute 10 visible	0
 Attribute 10 global	1	
 Attribute 10 default		Để trống
 */
+
+    /*
+     
+     */
