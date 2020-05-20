@@ -26,19 +26,20 @@ namespace WebAutomation
             //Prepare list of product links
             List<string> productLinks = ListLink.Run();
 
-            sw.Stop();
-            TimeSpan ts = sw.Elapsed;
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-                ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-            Console.WriteLine("RunTime " + elapsedTime);
+
             //Run Dosin crawler
             Crawler crawler = new Crawler();
             List<Models.Product> listProduct = crawler.Run(productLinks);
 
             //Generate WooCommerce Product Import template
-           WooCommerceGenerator generator = new WooCommerceGenerator();
+            WooCommerceGenerator generator = new WooCommerceGenerator();
             generator.GenerateProductImportTemplate(listProduct, "D:\\woo.txt");
-        } 
+            sw.Stop();
+            TimeSpan ts = sw.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+            Console.WriteLine("total time for crawlling: " + elapsedTime);
+        }
     }
 }
 

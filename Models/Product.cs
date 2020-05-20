@@ -108,7 +108,7 @@ namespace WebAutomation.Models
             this.Published = "1";
             this.IsFeatured = "0";
             this.VisibilityInCatalog = "visible";
-            this.ShortDescription = "";
+            this.ShortDescription = "<ul>\n<li> Nhập mã<strong>[HE10] </ strong > giảm thêm 10K cho đơn hàng từ 150K trở lên cho mỗi Nhà Cung Cấp(Chỉ áp dụng cho Danh Mục: ÁO KHÔNG TAY, ÁO TAY NGẮN, ÁO POLO, ÁO CROPTOP, ÁO THUN BASIC, QUẦN NGẮN, TÚI, NÓN, GIÀY, PHỤ KIỆN)</ li >\n<li> Nhập mã<strong>[HE20] </ strong > giảm thêm 20K cho đơn hàng từ 250K trở lên cho mỗi Nhà Cung Cấp(Chỉ áp dụng cho Danh Mục: ÁO KHÔNG TAY, ÁO TAY NGẮN, ÁO POLO, ÁO CROPTOP, ÁO THUN BASIC, QUẦN NGẮN, TÚI, NÓN, GIÀY, PHỤ KIỆN)</ li >\n<li> Nhập mã<strong>[HE50] </ strong > giảm thêm 50K cho đơn hàng từ 500K trở lên cho mỗi Nhà Cung Cấp(Chỉ áp dụng cho Danh Mục: ÁO KHÔNG TAY, ÁO TAY NGẮN, ÁO POLO, ÁO CROPTOP, ÁO THUN BASIC, QUẦN NGẮN, TÚI, NÓN, GIÀY, PHỤ KIỆN)</ li >\n<li> Đăng ký thành viên tặng ngay 20K cùng một mã giảm 5 % < strong >[VENUS_NEW_MEMBER] </ strong ></ li >\n </ ul >";
             this.Description = "";
             this.DateSalePriceStarts = "";
             this.DateSalePriceEnds = "";
@@ -127,7 +127,7 @@ namespace WebAutomation.Models
             this.PurchaseNote = "";
             this.SalePrice = 99999999;
             this.RegularPrice = 999999999;
-            this.Categories = "";
+            this.Categories = "TÚI,";
             this.Tags = "";
             this.ShippingClass = "";
             this.Images = "";
@@ -176,7 +176,7 @@ namespace WebAutomation.Models
             this.Attribute7Global = "1";
             this.Attribute7Default = "";
             this.Attribute8Name = "TÚI";
-            this.Attribute8Value = "";
+            this.Attribute8Value = "BA LÔ";
             this.Attribute8Visible = "0";
             this.Attribute8Global = "1";
             this.Attribute8Default = "";
@@ -288,6 +288,6 @@ Attribute 10 global	1
 Attribute 10 default		Để trống
 */
 
-    /*
-     
-     */
+/*
+
+ */

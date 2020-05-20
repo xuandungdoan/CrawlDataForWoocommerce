@@ -19,10 +19,12 @@ namespace WebAutomation
 
             //Redirect to site by URL
             List<string> linkproducts = new List<string>();
-            linkproducts.Add("https://dosi-in.com/outer/page-4/");
-           
+
+            linkproducts.Add("https://dosi-in.com/backpack/");
+
 
             List<string> linkProduct = new List<string>();
+
             foreach (var link in linkproducts)
             {
                 browser.Navigate().GoToUrl(link);
@@ -38,6 +40,7 @@ namespace WebAutomation
                 Console.WriteLine("link san pham: " + link);
             }
             Console.WriteLine("so luong san pham: " + count1);
+
             browser.Close();
             //Close browser
             return linkProduct;

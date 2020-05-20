@@ -13,16 +13,16 @@ namespace WebAutomation
         /// <param name="templateFile">Save as template file name</param>
         public void GenerateProductImportTemplate(List<Models.Product> products, string templateFile)
         {
-            string dataFormat = "ID@Type@SKU@Name@Published@\"Is featured?\"@\"Visibility in catalog\"@\"Short description\"@Description@\"Date sale price starts\"@\"Date sale price ends\"@\"Tax status\"@\"Tax class\"@\"In stock?\"@Stock@\"Low stock amount\"@\"Backorders allowed?\"@\"Sold individually?\"@\"Weight(kg)\"@\"Length(cm)\"@\"Width(cm)\"@\"Height(cm)\"@\"Allow customer reviews?\"@\"Purchase note\"@\"Sale price\"@\"Regular price\"@Categories@Tags@\"Shipping class\"@Images@\"Download limit\"@\"Download expiry days\"@Parent@\"Grouped products\"@Upsells@Cross-sells@\"External URL\"@\"Button text\"@Position@\"Attribute 1 name\"@\"Attribute 1 value(s)\"@\"Attribute 1 visible\"@\"Attribute 1 global\"@\"Attribute 1 default\"@\"Attribute 2 name\"@\"Attribute 2 value(s)\"@\"Attribute 2 visible\"@\"Attribute 2 global\"@\"Attribute 2 default\"@\"Attribute 3 name\"@\"Attribute 3 value(s)\"@\"Attribute 3 visible\"@\"Attribute 3 global\"@\"Attribute 3 default\"@\"Attribute 4 name\"@\"Attribute 4 value(s)\"@\"Attribute 4 visible\"@\"Attribute 4 global\"@\"Attribute 4 default\"@\"Attribute 5 name\"@\"Attribute 5 value(s)\"@\"Attribute 5 visible\"@\"Attribute 5 global\"@\"Attribute 5 default\"@\"Attribute 6 name\"@\"Attribute 6 value(s)\"@\"Attribute 6 visible\"@\"Attribute 6 global\"@\"Attribute 6 default\"@\"Attribute 7 name\"@\"Attribute 7 value(s)\"@\"Attribute 7 visible\"@\"Attribute 7 global\"@\"Attribute 7 default\"@\"Attribute 8 name\"@\"Attribute 8 value(s)\"@\"Attribute 8 visible\"@\"Attribute 8 global\"@\"Attribute 8 default\"@\"Attribute 9 name\"@\"Attribute 9 value(s)\"@\"Attribute 9 visible\"@\"Attribute 9 global\"@\"Attribute 9 default\"";
+            string dataFormat = "ID@Type@SKU@Name@Published@\"Is featured?\"@\"Visibility in catalog\"@\"Short description\"@Description@\"Date sale price starts\"@\"Date sale price ends\"@\"Tax status\"@\"Tax class\"@\"In stock?\"@Stock@\"Low stock amount\"@\"Backorders allowed?\"@\"Sold individually?\"@\"Weight(kg)\"@\"Length(cm)\"@\"Width(cm)\"@\"Height(cm)\"@\"Allow customer reviews?\"@\"Purchase note\"@\"Sale price\"@\"Regular price\"@Categories@Tags@\"Shipping class\"@Images@\"Download limit\"@\"Download expiry days\"@Parent@\"Grouped products\"@Upsells@Cross-sells@\"External URL\"@\"Button text\"@Position@\"Attribute 1 name\"@\"Attribute 1 value(s)\"@\"Attribute 1 visible\"@\"Attribute 1 global\"@\"Attribute 1 default\"@\"Attribute 2 name\"@\"Attribute 2 value(s)\"@\"Attribute 2 visible\"@\"Attribute 2 global\"@\"Attribute 2 default\"@\"Attribute 3 name\"@\"Attribute 3 value(s)\"@\"Attribute 3 visible\"@\"Attribute 3 global\"@\"Attribute 3 default\"@\"Attribute 4 name\"@\"Attribute 4 value(s)\"@\"Attribute 4 visible\"@\"Attribute 4 global\"@\"Attribute 4 default\"@\"Attribute 5 name\"@\"Attribute 5 value(s)\"@\"Attribute 5 visible\"@\"Attribute 5 global\"@\"Attribute 5 default\"@\"Attribute 6 name\"@\"Attribute 6 value(s)\"@\"Attribute 6 visible\"@\"Attribute 6 global\"@\"Attribute 6 default\"@\"Attribute 7 name\"@\"Attribute 7 value(s)\"@\"Attribute 7 visible\"@\"Attribute 7 global\"@\"Attribute 7 default\"@\"Attribute 8 name\"@\"Attribute 8 value(s)\"@\"Attribute 8 visible\"@\"Attribute 8 global\"@\"Attribute 8 default\"@\"Attribute 9 name\"@\"Attribute 9 value(s)\"@\"Attribute 9 visible\"@\"Attribute 9 global\"@\"Attribute 9 default\"@\"Attribute 10 name\"@\"Attribute 10 value(s)\"@\"Attribute 10 visible\"@\"Attribute 10 global\"@\"Attribute 10 default\"";
 
             System.IO.StreamWriter writer = new System.IO.StreamWriter(templateFile);
             //Write header
-            
+
             string header = dataFormat;
             writer.WriteLine(header);
 
             //Write data row
-            foreach(var product in products)
+            foreach (var product in products)
             {
                 string dataRow = dataFormat;
                 dataRow = dataRow.Replace("ID", product.ID);
@@ -109,7 +109,7 @@ namespace WebAutomation
                 dataRow = dataRow.Replace("Attribute 9 visible", product.Attribute9Visible);
                 dataRow = dataRow.Replace("Attribute 9 global", product.Attribute9Global);
                 dataRow = dataRow.Replace("Attribute 9 default", product.Attribute9Default);
-                 dataRow = dataRow.Replace("Attribute 10 name", product.Attribute10Name);
+                dataRow = dataRow.Replace("Attribute 10 name", product.Attribute10Name);
                 dataRow = dataRow.Replace("Attribute 10 value(s)", product.Attribute10Value);
                 dataRow = dataRow.Replace("Attribute 10 visible", product.Attribute10Visible);
                 dataRow = dataRow.Replace("Attribute 10 global", product.Attribute10Global);
